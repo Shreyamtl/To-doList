@@ -11,6 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    box-shadow: darkred;
 }
 
 .app-container {
@@ -22,11 +23,18 @@ body {
     text-align: center;
     height:500px; 
 }
+.bibi-list-check {
+    display: block;           
+    margin: 0 auto;           
+    width: 30px;       
+    height: 50px;            
+    fill:rgb(212, 9, 121);
+}
 
 h1 {
     font-family:'Times New Roman', Times, serif;
     color:darkmagenta;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     font-size: 54px;
 }
 
@@ -57,7 +65,7 @@ button.edit {
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 200px; 
+    margin-left: auto;
 }
 
 button.edit:hover {
@@ -93,6 +101,7 @@ button.remove {
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: 10px;
 
 }
 
