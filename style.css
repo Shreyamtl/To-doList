@@ -6,105 +6,164 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color:lavender;
+    background: linear-gradient(135deg, #eef2f3, #c7dbe8);
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    box-shadow: darkred;
 }
 
 .app-container {
     background-color: #fff;
     padding: 20px;
-    border-radius: 58px;
-    box-shadow: 0 0 10px rgba(209, 35, 35, 0.1);
-    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(4, 42, 255);
+    width: 900px;
     text-align: center;
-    height:500px; 
-}
-.bibi-list-check {
-    display: block;           
-    margin: 0 auto;           
-    width: 30px;       
-    height: 50px;            
-    fill:rgb(212, 9, 121);
 }
 
-h1 {
-    font-family:'Times New Roman', Times, serif;
-    color:darkmagenta;
-    margin-bottom: 2px;
-    font-size: 54px;
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px; 
+    margin-bottom: 20px;
+}
+.bibi-list-check {         
+    vertical-align:middle;         
+    width: 30px;       
+    height: 90px;            
+    fill: rgb(11, 137, 36);
+}
+
+.heading h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color:#426969;
+    margin: 0;
+    font-size: 48px;
 }
 
 input[type="text"] {
     width: 80%;
     padding: 10px;
-    margin-right: 10px;
-    border: 3px solid plum;
+    margin: 8px 0;
+    border: 3px solid rgb(64, 86, 4);
     border-radius: 4px;
 }
 
 button {
     padding: 10px 15px;
-    margin-top: 8px;
-    background-color: #9b09b5;
+    background-color:#4857b1;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 5px;
+}
+
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 6px 5px rgba(86, 235, 12, 0.3);
+    
 }
 
 button:hover {
-    background-color: #de1af0;
+    box-shadow: 0 8px 16px rgba(166, 250, 10, 0.35); 
+    background-color:#071e83;
 }
+
 button.edit {
-    background-color:#9b09b5; 
+    background-color: #2e0bf5de;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: auto;
 }
 
 button.edit:hover {
     background-color: #01ae2c;
 }
 
-
 ul {
     list-style: none;
     margin-top: 20px;
+    padding: 0;
 }
 
 li {
-    background-color:rgb(240, 74, 152);
-    cursor: pointer;
+    background-color:lavender;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    box-shadow: 0 0 10px rgba(82, 8, 220, 0.822);
+    color: rgb(12, 12, 12);
+    box-shadow: 0 2px 5px rgba(35, 34, 34, 0.1);
+
 }
 
 li.completed {
     text-decoration: line-through;
-    color:rgb(56, 128, 5);
+    color: rgb(56, 128, 5);
 }
 
 button.remove {
-    background-color: #ac12ba;
+    background-color: #2e0bf5;
     padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
-    margin-left: 10px;
-
 }
 
 button.remove:hover {
-    background-color: #01ae2c;
+    background-color: #b10505;
+}
+
+.fade-out {
+    opacity: 0.4 ;
+    transition: opacity 0.2s ease;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #fff;
+}
+
+body.dark-mode .app-container {
+    background-color: #1e1e1e;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode input,
+body.dark-mode button {
+    background-color: #2a2a2a;
+    color: white;
+    border-color: #444;
+}
+
+body.dark-mode li {
+    background-color: #333;
+    color: white;
+}
+
+body.dark-mode li.completed {
+    color: #5cff5c;
+}
+#themeToggle {
+    position: fixed;
+    top: 20px;
+    right: 60px;
+    padding: 10px 15px;
+    background-color: #2e2a2a;
+    border: 2px solid #000265;
+    color: #92aaff;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 999;
+}
+
+#themeToggle:hover {
+    background-color: #aac1f2;
+    color: #1a1a1a;
 }
