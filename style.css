@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #eef2f3, #c7dbe8);
+    background: linear-gradient(135deg, #eef2f3, #b8d9ef);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgb(4, 42, 255);
+    box-shadow: 0 0 10px rgb(2, 25, 153);
     width: 900px;
     text-align: center;
 }
@@ -33,12 +33,12 @@ body {
     vertical-align:middle;         
     width: 30px;       
     height: 90px;            
-    fill: rgb(11, 137, 36);
+    fill: rgb(12, 72, 150);
 }
 
 .heading h1 {
     font-family: 'Times New Roman', Times, serif;
-    color:#426969;
+    color:#0b4d94;
     margin: 0;
     font-size: 48px;
 }
@@ -68,7 +68,7 @@ button:active {
 }
 
 button:hover {
-    box-shadow: 0 8px 16px rgba(166, 250, 10, 0.35); 
+    box-shadow: 0 8px 16px rgba(10, 94, 250, 0.35); 
     background-color:#071e83;
 }
 
@@ -147,7 +147,7 @@ body.dark-mode li {
 }
 
 body.dark-mode li.completed {
-    color: #5cff5c;
+    color: #5cff5cd9;
 }
 #themeToggle {
     position: fixed;
